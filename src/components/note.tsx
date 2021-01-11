@@ -9,17 +9,20 @@ export const Note: React.FC<Props> = ({ href }) => {
     <iframe
       className={'note-embed'}
       src={href}
-      height={400}
       style={{
-        border: 0,
+        border: 'none',
         display: 'block',
-        maxWidth: '99%',
-        height: '230px',
-        width: '480px',
+        width: '100%',
+        maxWidth: '548px',
+        minHeight: '224px',
+        height: '100%',
+        maxHeight: '240px',
         padding: '0px',
-        margin: '10px 0px',
+        margin: '4px 0px 0px',
         position: 'static',
         visibility: 'visible',
+        marginBottom: '-8px',
+        marginTop: '8px'
       }}
     />
   )

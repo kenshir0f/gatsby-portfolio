@@ -12,7 +12,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 p {
-  color: ${colors.black};
+  color: ${colors.black[900]};
   line-height: 165%;
   margin: 0 0 12px;
 }
