@@ -28,4 +28,9 @@ li {
 a {
   color: ${colors.blue};
 }
+h1 {
+  margin: ${['40px 0 20px']};
+  font-size: ${['24px']};
+  letter-spacing: 0.02em;
+}
 `

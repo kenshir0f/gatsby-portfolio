@@ -7,15 +7,17 @@ import { Box } from './box'
 const Time = styled.time`
   ${typography}
   ${space}
-  font-weight: 600;
-  color: ${colors.black[500]};
+  font-weight: 400;
+  color: ${colors.black[300]};
   display: block;
+  letter-spacing: 0.02em;
 `
 
 const P = styled.p`
   ${typography}
   ${color}
   ${space}
+  letter-spacing: 0.02em;
 `
 
 interface Props {
@@ -29,14 +31,14 @@ interface Props {
 
 export const News: React.FC<Props> = ({ date, en, children }) => {
   return (
-    <Box mt={[28, 28, 36]}>
-      <Time fontSize={[13, 15, 17, 19]} mb={[1, '8px', '12px']}>
+    <Box mt={[36, 28, 36]}>
+      <Time fontSize={[13, 15, 17, 19]} mb={['8px', '12px']}>
         {date}
       </Time>
       <P
-        fontSize={[15, 17, 19, 21]}
+        fontSize={[14, 17, 19, 21]}
         lineHeight={['24px', '28px', '32px']}
-        mb={[0, '4px', '12px']}
+        mb={['4px', '4px', '12px']}
       >
         {children}
       </P>
@@ -44,7 +46,7 @@ export const News: React.FC<Props> = ({ date, en, children }) => {
         color={colors.black[300]}
         fontSize={[13, 15, 17, 19]}
         lineHeight={['20px']}
-        fontWeight={600}
+        fontWeight={400}
         mb={0}
       >
         {en}

@@ -1,14 +1,14 @@
 import React from 'react'
 
 interface Props {
-  href: string
+  id: string
 }
 
-export const Note: React.FC<Props> = ({ href }) => {
+export const Note: React.FC<Props> = ({ id }) => {
   return (
     <iframe
       className={'note-embed'}
-      src={href}
+      src={`https://note.mu/embed/notes/${id}`}
       style={{
         border: 'none',
         display: 'block',
