@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { colors } from '../utils/colors'
-import { space, color, layout, typography } from 'styled-system'
+import { space, color, typography } from 'styled-system'
 import { Box } from './box'
+import theme from '../utils/theme'
 
 const Time = styled.time`
   ${typography}
@@ -12,6 +13,8 @@ const Time = styled.time`
   display: block;
   letter-spacing: 0.02em;
 `
+
+Time.defaultProps = { theme }
 
 const P = styled.p`
   ${typography}
@@ -25,14 +28,10 @@ interface Props {
   en: string
 }
 
-// ~639px, ~831px, ~1023px, 1024px~
-// mobile, tablet, desktop, hd
-// 1: 4px, 2: 8px, 3: 16px, 4: 32px
-
 export const News: React.FC<Props> = ({ date, en, children }) => {
   return (
     <Box mt={[36, 28, 36]}>
-      <Time fontSize={[13, 15, 17, 19]} mb={['8px', '12px']}>
+      <Time fontSize={[0, 1, 2, 3]} mb={['8px', '12px']}>
         {date}
       </Time>
       <P

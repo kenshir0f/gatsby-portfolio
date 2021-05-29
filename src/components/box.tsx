@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { space, color, layout, typography, flexbox } from 'styled-system'
+import theme from '../utils/theme'
 
 export const Box = styled.div`
   ${space}
@@ -7,6 +8,8 @@ export const Box = styled.div`
   ${layout}
   ${typography}
 `
+
+Box.defaultProps = { theme }
 
 export const Flex = styled.div`
   display: flex;
