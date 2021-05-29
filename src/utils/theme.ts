@@ -1,15 +1,15 @@
 import { colors } from './colors'
 
-const breakpoints = ['480px', '960px', '1200px']
+const breakpoints = ['480px', '960px']
 const fontSizes = [
   '12px',
   '14px',
   '16px',
+  '18px',
   '20px',
   '24px',
   '32px',
   '40px',
-  '48px',
 ]
 const space = [
   '0',
@@ -22,9 +22,6 @@ const space = [
   '48px',
   '64px',
   '80px',
-  '96px',
-  '112px',
-  '128px',
 ]
 
 const theme = {
