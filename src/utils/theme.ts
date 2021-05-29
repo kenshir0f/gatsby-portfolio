@@ -1,6 +1,6 @@
 import { colors } from './colors'
 
-const breakpoints = ['480px', '960px']
+const breakpoints = ['480px', '960px', '1200px']
 const fontSizes = [
   '12px',
   '14px',

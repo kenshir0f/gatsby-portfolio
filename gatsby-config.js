@@ -4,13 +4,15 @@ module.exports = {
   siteMetadata: {
     title: 'kenshir0f.com',
     shortName: 'kenshir0f',
-    description: "Portfolio of kenshir0f",
+    description: 'Portfolio of kenshir0f',
   },
   plugins: [
-    "gatsby-plugin-catch-links",
-    "gatsby-transformer-remark",
-    "gatsby-plugin-remove-trailing-slashes",
-    "gatsby-plugin-styled-components",
+    'gatsby-plugin-catch-links',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-remove-trailing-slashes',
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-preload-fonts',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -31,10 +33,9 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Noto Sans JP', 'Lato:300,400,700']
-        }
-      }
+          families: ['Noto Sans JP', 'Lato:300,400,700'],
+        },
+      },
     },
-    "gatsby-plugin-preload-fonts",
   ],
 }
