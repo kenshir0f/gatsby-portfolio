@@ -21,7 +21,6 @@ exports.createPages = async ({graphql, actions}, themeOptions) => {
     }
   `)
 
-  // Turn every MDX file into a page.
   return Promise.all(
     data.allMdx.nodes.map(async node => {
       const pagePath = path
@@ -29,7 +28,7 @@ exports.createPages = async ({graphql, actions}, themeOptions) => {
           node.parent.relativeDirectory,
           node.parent.name === 'index' ? '/' : node.parent.name,
         )
-        .replace(/\\/g, '/') // Convert Windows backslash paths to forward slash paths: foo\\bar → foo/bar
+        .replace(/\\/g, '/')
 
       const code = await mdx(node.rawBody)
       const {frontmatter} = extractExports(code)
