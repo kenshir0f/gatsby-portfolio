@@ -6,6 +6,7 @@ import { Box, Flex } from '../components/box'
 import { Profile } from '../components/profile'
 import { Heading, TitleLink, Date, Caption } from '../components/text'
 import { Tag } from '../components/tag'
+import { ReadMoreButton } from '../components/button'
 
 const components = {
   Box,
@@ -16,6 +17,7 @@ const components = {
   Date,
   Tag,
   Caption,
+  ReadMoreButton
 }
 
 export const wrapRootElement: React.FC<any> = ({ element }) => {
