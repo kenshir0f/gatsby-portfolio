@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from './theme'
 import { Box, Flex } from '../components/box'
 import { Profile } from '../components/profile'
-import { Heading } from '../components/text'
+import { Heading, TitleLink, Date } from '../components/text'
 import { Tag } from '../components/tag'
 
 const components = {
@@ -12,6 +12,8 @@ const components = {
   Flex,
   Profile,
   Heading,
+  TitleLink,
+  Date,
   Tag,
 }
 
