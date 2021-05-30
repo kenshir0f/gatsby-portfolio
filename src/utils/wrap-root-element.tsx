@@ -15,12 +15,10 @@ const components = {
   Tag,
 }
 
-const wrapRootElement: React.FC<any> = ({ element }) => {
+export const wrapRootElement: React.FC<any> = ({ element }) => {
   return (
     <MDXProvider components={components}>
       <ThemeProvider theme={theme}>{element}</ThemeProvider>
     </MDXProvider>
   )
 }
-
-export default wrapRootElement

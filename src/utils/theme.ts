@@ -9,7 +9,7 @@ const fontSizes = {
   lg: '1.125rem',
   md: '1rem',
   sm: '0.875rem',
-  xs: '0.75rem'
+  xs: '0.75rem',
 }
 
 const space = [
@@ -29,5 +29,5 @@ export const theme = {
   colors,
   breakpoints,
   fontSizes,
-  space
+  space,
 }
