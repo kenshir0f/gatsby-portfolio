@@ -7,6 +7,9 @@ module.exports = {
     description: 'Portfolio of kenshir0f',
   },
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-catch-links',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
