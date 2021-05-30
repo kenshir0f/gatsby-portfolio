@@ -34,7 +34,7 @@ export const TitleLink: React.FC<TitleLinkProps> = ({
   )
 }
 
-export const TitleLinkBase = styled.a<COMMON_PROPS>`
+const TitleLinkBase = styled.a<COMMON_PROPS>`
   display: block;
   color: ${colors.black[900]};
   font-weight: 700;

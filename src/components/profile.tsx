@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { colors } from '../utils/colors'
-import { Box } from './box'
+import { Flex } from './box'
 
 interface Props {
   src: string
@@ -11,11 +11,11 @@ export const Profile: React.FC<Props> = ({ src }) => {
   const twitterUrl = 'https://twitter.com/kenshir0f'
 
   return (
-    <Box>
+    <Flex alignItems="center" flexDirection="column" mt={[40, 60]}>
       <Image src={src} alt="プロフィール画像" />
       <Name>Kenshiro Fujii</Name>
       <TwitterID href={twitterUrl}>@kenshir0f</TwitterID>
-    </Box>
+    </Flex>
   )
 }
 
