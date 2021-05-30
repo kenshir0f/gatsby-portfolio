@@ -37,8 +37,8 @@ export const COMMON = compose(
 )
 export type COMMON_PROPS = SpaceProps &
   ColorProps &
-  LayoutProps &
   TypographyProps &
+  LayoutProps &
   PositionProps &
   FlexboxProps &
   GridProps &

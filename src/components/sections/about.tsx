@@ -9,7 +9,7 @@ import { Heading } from '../text'
 export const About: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Box {...props}>
-      <Heading icon="user" mb={3} text="About" />
+      <Heading icon="user" mb={[3, 4]} text="About" />
       <BodyText lineHeight={['160%', '180%']}>
         UI デザイナー 兼 フロントエンドエンジニア
         <br />
