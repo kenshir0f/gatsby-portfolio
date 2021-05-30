@@ -13,6 +13,7 @@ export const Works: React.FC<BaseProps> = ({ ...props }) => {
       <Heading icon="book" mb={3} text="Works" />
       <Grid
         gridGap="24px"
+        gridTemplateColumns={["1fr", "1fr 1fr"]}
       >
         <Work
           image={<StopCovidImage />}
