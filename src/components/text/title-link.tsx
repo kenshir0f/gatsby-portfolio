@@ -4,6 +4,7 @@ import { colors } from '../../utils/colors'
 import { theme } from '../../utils/theme'
 import { COMMON, COMMON_PROPS } from '../../utils/constants'
 import { Icon } from '../icons'
+import { Box } from '../box'
 
 interface TitleLinkProps {
   text: string
@@ -19,14 +20,16 @@ export const TitleLink: React.FC<TitleLinkProps> = ({
   const { md, lg } = theme.fontSizes
 
   return (
-    <TitleLinkBase
-      href={href}
-      fontSize={[md, lg]}
-      mb={[1]}
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      {text}
+    <Box>
+      <TitleLinkBase
+        href={href}
+        fontSize={[md, lg]}
+        mb={[1, 2]}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        {text}
+      </TitleLinkBase>
       {youtube && (
         <a
           href="https://www.youtube.com/watch?v=X9JjTfeEJ5A"
@@ -41,12 +44,12 @@ export const TitleLink: React.FC<TitleLinkProps> = ({
           />
         </a>
       )}
-    </TitleLinkBase>
+    </Box>
   )
 }
 
 const TitleLinkBase = styled.a<COMMON_PROPS>`
-  display: block;
+  display: inline-block;
   color: ${colors.black[900]};
   font-weight: 700;
   text-decoration: none;

@@ -38,16 +38,15 @@ interface ImageProps {
 }
 
 const Image: React.FC<ImageProps> = ({ name, title }) => {
-  const src = `../images/works/${name}.jpg`
+  const src = `../../images/works/stella.jpg`
   return (
     <StaticImage
       src={src}
       alt={title}
       width={160}
       height={160}
-      style={{ borderRadius: '50%' }}
+      style={{ borderRadius: 4 }}
       placeholder="blurred"
-      loading="eager"
     />
   )
 }
