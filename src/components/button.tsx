@@ -7,18 +7,23 @@ import { Flex } from './box'
 export const ReadMoreButton: React.FC = () => {
   return (
     <Flex justifyContent="center">
-      <ButtonBase>もっと見る</ButtonBase>
+      <ButtonBase
+        href="https://note.com/fjkn"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        もっと見る
+      </ButtonBase>
     </Flex>
   )
 }
 
-const ButtonBase = styled.button`
+const ButtonBase = styled.a`
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 40px;
   width: 180px;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: ${colors.white};
   border: 1px solid ${colors.black[700]};
   color: ${colors.black[700]};
@@ -27,4 +32,8 @@ const ButtonBase = styled.button`
   line-height: 40px;
   padding: 0;
   cursor: pointer;
+  text-decoration: none;
+  :hover {
+    background-color: #F5FAFD;
+  }
 `

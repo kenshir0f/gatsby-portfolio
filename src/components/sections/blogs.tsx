@@ -12,17 +12,17 @@ export const Blogs: React.FC<BaseProps> = ({ ...props }) => {
         text="デザイン基盤を整えるため、サービス開発から少し離れた話"
         href="https://note.com/fjkn/n/nc8f5498e5e69"
       />
-      <Date time="2020.01.01" />
+      <Date time="2020.11.20" />
       <TitleLink
         text="FigmaのコンポーネントをVariantsで状態管理する"
         href="https://note.com/fjkn/n/nfa218f39413e"
       />
-      <Date time="2020.01.01" />
+      <Date time="2020.10.29" />
       <TitleLink
         text="SlackのUXライティングの考え方"
         href="https://note.com/fjkn/n/n39ebfbaf0332"
       />
-      <Date time="2020.01.01" />
+      <Date time="2020.01.29" />
       <ReadMoreButton />
     </Box>
   )

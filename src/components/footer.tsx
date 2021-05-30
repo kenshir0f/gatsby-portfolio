@@ -30,7 +30,12 @@ const SNSIcon: React.FC<Props> = ({ type }) => {
   const userId = type === 'note' ? 'fjkn' : 'kenshir0f'
   const href = `https://${type}.com/${userId}`
   return (
-    <SNSLink href={href} target="_blank" aria-label={`${type}`}>
+    <SNSLink
+      href={href}
+      target="_blank"
+      aria-label={`${type}`}
+      rel="noreferrer noopener"
+    >
       <Icon type={type} color={colors.black[900]} role="img" aria-hidden />
     </SNSLink>
   )
