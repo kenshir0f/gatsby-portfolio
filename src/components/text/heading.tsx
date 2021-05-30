@@ -3,18 +3,19 @@ import React, { HTMLAttributes } from 'react'
 import { Icon, IconType } from '../icons'
 import { colors } from '../../utils/colors'
 import { Flex } from '../box'
-import { COMMON, COMMON_PROPS } from '../../utils/constants'
+import { BaseProps, COMMON, COMMON_PROPS } from '../../utils/constants'
 interface HeadingProps {
   icon: IconType
+  text: string
 }
 
-type Props = HeadingProps & COMMON_PROPS & HTMLAttributes<HTMLParagraphElement>
+type Props = HeadingProps & BaseProps
 
-export const Heading: React.FC<Props> = ({ icon, children, ...props }) => {
+export const Heading: React.FC<Props> = ({ icon, text, ...props }) => {
   return (
     <Flex alignItems="center" {...props}>
-      <Icon type={icon} color={colors.blue} mt="-2px"/>
-      <H2 ml={2}>{children}</H2>
+      <Icon type={icon} color={colors.blue} mt="-2px" />
+      <H2 ml={2}>{text}</H2>
     </Flex>
   )
 }

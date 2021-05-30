@@ -8,9 +8,7 @@ import { Heading } from '../text'
 export const Resume: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Box {...props}>
-      <Heading icon="paper" mb={[4, 5]}>
-        Resume
-      </Heading>
+      <Heading icon="paper" mb={[4, 5]} text="Resume" />
       <CompanyHistory>Cookpad Inc. | 2017 - Present</CompanyHistory>
       <Department>Design Strategy Dept | 2020 - Present</Department>
       <Description>デザイン基盤グループ長</Description>

@@ -21,9 +21,7 @@ const SKILLS = [
 export const Skills: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Box {...props}>
-      <Heading icon="heart" mb={[3, 4]}>
-        Skills
-      </Heading>
+      <Heading icon="heart" mb={[3, 4]} text="Skills" />
       <Flex m="-12px -12px 60px 0" flexWrap="wrap">
         {SKILLS.map((skill) => {
           return <Tag name={skill} />

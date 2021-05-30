@@ -6,9 +6,7 @@ import { Caption, Heading, TitleLink } from '../text'
 export const Rewards: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Box {...props}>
-      <Heading icon="star" mb={[3, 4]}>
-        Rewards / etc
-      </Heading>
+      <Heading icon="star" mb={[3, 4]} text="Rewards / etc" />
       <TitleLink
         text="Good Design Award 2020 金賞"
         href="https://www.g-mark.org/award/describe/51112"

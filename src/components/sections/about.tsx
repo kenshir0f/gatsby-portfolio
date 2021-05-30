@@ -6,12 +6,10 @@ import { theme } from '../../utils/theme'
 import { Box } from '../box'
 import { Heading } from '../text'
 
-export const About: React.FC<BaseProps> = ({...props}) => {
+export const About: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Box {...props}>
-      <Heading icon="user" mb={3}>
-        About
-      </Heading>
+      <Heading icon="user" mb={3} text="About" />
       <BodyText lineHeight={['160%', '180%']}>
         cookpad.com のリファクタリング、デザインライブラリの更新cookpad.com
         のリファクタリング、デザインライブラリの更新cookpad.com

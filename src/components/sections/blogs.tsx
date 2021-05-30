@@ -7,9 +7,7 @@ import { BaseProps } from '../../utils/constants'
 export const Blogs: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Box {...props}>
-      <Heading icon="edit" mb={[3, 4]}>
-        Blogs
-      </Heading>
+      <Heading icon="edit" mb={[3, 4]} text="Blogs" />
       <TitleLink
         text="デザイン基盤を整えるため、サービス開発から少し離れた話"
         href="https://note.com/fjkn/n/nc8f5498e5e69"
