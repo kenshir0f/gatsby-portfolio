@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { colors } from '../../utils/colors'
 import { BaseProps, COMMON, COMMON_PROPS } from '../../utils/constants'
