@@ -4,11 +4,12 @@ import { Icon, IconType } from './icons'
 import { colors } from '../utils/colors'
 import { Flex } from './box'
 import { space, SpaceProps } from 'styled-system'
-interface Props {
+
+interface HeadingProps {
   icon: IconType
 }
 
-export const Heading: React.FC<Props> = ({ icon, children }) => {
+export const Heading: React.FC<HeadingProps> = ({ icon, children }) => {
   return (
     <Flex alignItems="center" mb={[4]}>
       <Icon type={icon} color={colors.blue} />
