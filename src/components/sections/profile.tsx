@@ -26,10 +26,9 @@ export const Profile: React.FC = () => {
 }
 
 const Image: React.FC = () => {
-  const src = '../images/profile.jpg'
   return (
     <StaticImage
-      src={src}
+      src={'../../images/profile.jpg'}
       alt="プロフィール画像"
       width={160}
       height={160}

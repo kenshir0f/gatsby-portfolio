@@ -37,18 +37,19 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Noto Sans JP',
-            weights: ['300', '400', '700'],
-          },
-          {
-            family: 'Lato',
-            weights: ['300', '400', '700'],
-          },
-          {
             family: 'Nunito Sans',
             weights: ['400', '600', '700'],
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `kenshir0f portfolio`,
+        short_name: `kenshir0f`,
+        start_url: `/`,
+        icon: './src/images/favicon.png',
       },
     },
   ],
