@@ -18,9 +18,10 @@ const icons = {
 
 interface Props {
   icon: string
+  color: string
 }
 
-export const Icon: React.FC<Props> = ({ icon }) => {
+export const Icon: React.FC<Props> = ({ icon, color }) => {
   const path = icons[icon]
 
   return (
@@ -29,6 +30,8 @@ export const Icon: React.FC<Props> = ({ icon }) => {
       height="24"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      style={{ color: color }}
       dangerouslySetInnerHTML={{ __html: path }}
     />
   )
