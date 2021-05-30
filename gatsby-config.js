@@ -30,11 +30,22 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
-        google: {
-          families: ['Noto Sans JP', 'Lato:300,400,700'],
-        },
+        fonts: [
+          {
+            family: 'Noto Sans JP',
+            weights: ['300', '400', '700'],
+          },
+          {
+            family: 'Lato',
+            weights: ['300', '400', '700'],
+          },
+          {
+            family: 'Nunito Sans',
+            weights: ['400', '600', '700'],
+          },
+        ],
       },
     },
   ],

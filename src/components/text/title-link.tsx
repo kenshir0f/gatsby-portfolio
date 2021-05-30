@@ -21,9 +21,10 @@ export const TitleLink: React.FC<TitleLinkProps> = ({ children, href }) => {
 export const TitleLinkBase = styled.a<COMMON_PROPS>`
   display: block;
   color: ${colors.black[900]};
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   line-height: 125%;
+  letter-spacing: 0.02rem;
   ${COMMON}
 
   :hover {
