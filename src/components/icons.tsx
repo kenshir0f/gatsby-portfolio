@@ -1,4 +1,6 @@
-import React, { SVGAttributes } from 'react'
+import React, { HTMLAttributes, SVGAttributes } from 'react'
+import styled from 'styled-components'
+import { COMMON, COMMON_PROPS } from '../utils/constants'
 
 // Referenced by src/icons
 const icons = {
@@ -32,7 +34,7 @@ export type IconType =
   | 'user'
   | 'youtube'
 
-interface Props extends SVGAttributes<SVGElement> {
+interface IconProps {
   /** アイコンの種類、 book, heart などを指定*/
   type: IconType
   /** アイコンの色を指定 */
@@ -40,6 +42,8 @@ interface Props extends SVGAttributes<SVGElement> {
   /** アイコンのサイズを指定 */
   size?: number
 }
+
+type Props = IconProps & SVGAttributes<SVGElement> & COMMON_PROPS
 
 /**
  * アイコンを SVG で生成する
@@ -50,15 +54,22 @@ export const Icon: React.FC<Props> = ({ type, color, size, ...props }) => {
   const path = icons[type]
 
   return (
-    <svg
+    <SVG
       width={size || 24}
       height={size || 24}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
-      style={{ color: color, verticalAlign: '-.125em' }}
+      style={{
+        color: color,
+        verticalAlign: `${props.verticalAlign}` || '-.125em',
+      }}
       dangerouslySetInnerHTML={{ __html: path }}
       {...props}
     />
   )
 }
+
+const SVG = styled.svg<SVGAttributes<SVGElement>>`
+  ${COMMON}
+`

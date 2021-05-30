@@ -19,6 +19,6 @@ export const Caption: React.FC<Props> = ({ children, ...props }) => {
 export const CaptionBase = styled.p<COMMON_PROPS>`
   margin: 0;
   color: ${colors.black[500]};
-  line-height: 130%;
+  line-height: 140%;
   ${COMMON}
 `
