@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { colors } from '../../utils/colors'
-import { COMMON, COMMON_PROPS } from '../../utils/constants'
+import { BaseProps, COMMON, COMMON_PROPS } from '../../utils/constants'
 import { theme } from '../../utils/theme'
 import { Box } from '../box'
 import { Heading } from '../text'
 
-export const About: React.FC = () => {
+export const About: React.FC<BaseProps> = ({...props}) => {
   return (
-    <Box>
+    <Box {...props}>
       <Heading icon="user" mb={3}>
         About
       </Heading>

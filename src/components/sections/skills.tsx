@@ -1,4 +1,5 @@
 import React from 'react'
+import { BaseProps } from '../../utils/constants'
 import { Box, Flex } from '../box'
 import { Tag } from '../tag'
 import { Heading } from '../text'
@@ -17,10 +18,12 @@ const SKILLS = [
   'HTML/CSS',
 ]
 
-export const Skills: React.FC = () => {
+export const Skills: React.FC<BaseProps> = ({ ...props }) => {
   return (
-    <Box>
-      <Heading icon="heart" mb={[3, 4]}>Skills</Heading>
+    <Box {...props}>
+      <Heading icon="heart" mb={[3, 4]}>
+        Skills
+      </Heading>
       <Flex m="-12px -12px 60px 0" flexWrap="wrap">
         {SKILLS.map((skill) => {
           return <Tag name={skill} />

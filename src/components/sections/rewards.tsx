@@ -1,10 +1,11 @@
 import React from 'react'
+import { BaseProps } from '../../utils/constants'
 import { Box } from '../box'
 import { Caption, Heading, TitleLink } from '../text'
 
-export const Rewards: React.FC = () => {
+export const Rewards: React.FC<BaseProps> = ({ ...props }) => {
   return (
-    <Box>
+    <Box {...props}>
       <Heading icon="star" mb={[3, 4]}>
         Rewards / etc
       </Heading>

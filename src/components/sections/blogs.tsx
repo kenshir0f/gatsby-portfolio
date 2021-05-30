@@ -2,10 +2,11 @@ import React from 'react'
 import { Box } from '../box'
 import { Date, Heading, TitleLink } from '../text'
 import { ReadMoreButton } from '../button'
+import { BaseProps } from '../../utils/constants'
 
-export const Blogs: React.FC = () => {
+export const Blogs: React.FC<BaseProps> = ({ ...props }) => {
   return (
-    <Box>
+    <Box {...props}>
       <Heading icon="edit" mb={[3, 4]}>
         Blogs
       </Heading>

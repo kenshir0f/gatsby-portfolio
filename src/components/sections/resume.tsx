@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { colors } from '../../utils/colors'
+import { BaseProps } from '../../utils/constants'
 import { Box } from '../box'
 import { Heading } from '../text'
 
-export const Resume: React.FC = () => {
+export const Resume: React.FC<BaseProps> = ({ ...props }) => {
   return (
-    <Box>
+    <Box {...props}>
       <Heading icon="paper" mb={[4, 5]}>
         Resume
       </Heading>

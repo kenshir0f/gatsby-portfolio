@@ -1,3 +1,4 @@
+import { HTMLAttributes } from 'react'
 import {
   compose,
   space,
@@ -44,3 +45,5 @@ export type COMMON_PROPS = SpaceProps &
   ShadowProps &
   BorderProps &
   BackgroundProps
+
+export type BaseProps = COMMON_PROPS & HTMLAttributes<HTMLElement>
