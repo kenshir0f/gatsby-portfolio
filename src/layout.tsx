@@ -9,8 +9,8 @@ function Layout({ children }) {
       <GlobalStyle />
       <Box margin={'0 auto'} px={16} maxWidth={['100%', '720px']}>
         {children}
-        <Footer />
       </Box>
+      <Footer />
     </>
   )
 }
