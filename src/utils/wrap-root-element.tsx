@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from './theme'
 import { Box, Flex } from '../components/box'
 import { Profile } from '../components/profile'
-import { Heading, TitleLink, Date } from '../components/text'
+import { Heading, TitleLink, Date, Caption } from '../components/text'
 import { Tag } from '../components/tag'
 
 const components = {
@@ -15,6 +15,7 @@ const components = {
   TitleLink,
   Date,
   Tag,
+  Caption,
 }
 
 export const wrapRootElement: React.FC<any> = ({ element }) => {
