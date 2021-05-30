@@ -11,6 +11,7 @@ export const Footer: React.FC = () => (
     bg={colors.black[100]}
     height={80}
     px={20}
+    mt={[60, 120]}
   >
     <small>© kenshir0f 2021</small>
     <Flex>

@@ -12,6 +12,8 @@ export const Profile: React.FC = () => {
 
   return (
     <Flex alignItems="center" flexDirection="column" mt={[40, 60]}>
+      <BackgroundBox />
+      <Background />
       <Image />
       <Name fontSize={[h3, h2]} mt={[3, 4]}>
         Kenshiro Fujii
@@ -56,4 +58,21 @@ const TwitterID = styled.a<COMMON_PROPS>`
   :hover {
     text-decoration: underline;
   }
+`
+
+const Background = styled.div`
+  clip-path: polygon(50% 100px, 0% 200px, 100% 200px);
+  background-color: ${colors.white};
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+`
+
+const BackgroundBox = styled.div`
+  background-color: ${colors.black[100]};
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
 `
