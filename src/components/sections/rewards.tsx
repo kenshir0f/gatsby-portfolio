@@ -9,7 +9,7 @@ export const Rewards: React.FC = () => {
         Rewards / etc
       </Heading>
       <TitleLink
-        text="Good Design Award 2020 Best 100"
+        text="Good Design Award 2020 金賞"
         href="https://www.g-mark.org/award/describe/51112"
       />
       <Caption

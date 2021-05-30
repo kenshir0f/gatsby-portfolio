@@ -19,10 +19,20 @@ export const TitleLink: React.FC<TitleLinkProps> = ({
   const { md, lg } = theme.fontSizes
 
   return (
-    <TitleLinkBase href={href} fontSize={[md, lg]} mb={[1]}>
+    <TitleLinkBase
+      href={href}
+      fontSize={[md, lg]}
+      mb={[1]}
+      target="_blank"
+      rel="noreferrer noopener"
+    >
       {text}
       {youtube && (
-        <a href="https://www.youtube.com/watch?v=X9JjTfeEJ5A" target="_blank">
+        <a
+          href="https://www.youtube.com/watch?v=X9JjTfeEJ5A"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Icon
             type="youtube"
             color={colors.black[900]}
