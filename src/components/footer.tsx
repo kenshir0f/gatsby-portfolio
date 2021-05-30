@@ -4,7 +4,7 @@ import { colors } from '../utils/colors'
 import { Flex } from './box'
 import { Icon, IconType } from './icons'
 
-export const Footer: React.FC<{}> = () => (
+export const Footer: React.FC = () => (
   <Flex
     justifyContent="space-between"
     alignItems="center"
