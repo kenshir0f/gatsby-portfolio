@@ -43,14 +43,5 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `kenshir0f portfolio`,
-        short_name: `kenshir0f`,
-        start_url: `/`,
-        icon: './src/images/favicon.png',
-      },
-    },
   ],
 }
