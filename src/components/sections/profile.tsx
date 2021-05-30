@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import React from 'react'
-import { colors } from '../utils/colors'
-import { Flex } from './box'
-import { COMMON, COMMON_PROPS } from '../utils/constants'
-import { theme } from '../utils/theme'
+import { colors } from '../../utils/colors'
+import { Flex } from '../box'
+import { COMMON, COMMON_PROPS } from '../../utils/constants'
+import { theme } from '../../utils/theme'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export const Profile: React.FC = () => {

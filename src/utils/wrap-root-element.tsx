@@ -2,24 +2,26 @@ import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './theme'
-import { Profile } from '../components/profile'
 import {
-  Skills,
-  Rewards,
-  Blogs,
+  Profile,
   About,
   Resume,
   Works,
+  Blogs,
+  Rewards,
+  Skills,
+  Enjoy,
 } from '../components/sections'
 
 const components = {
   Profile,
   About,
   Resume,
+  Works,
   Blogs,
   Rewards,
   Skills,
-  Works,
+  Enjoy,
 }
 
 export const wrapRootElement: React.FC<any> = ({ element }) => {

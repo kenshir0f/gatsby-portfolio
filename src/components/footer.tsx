@@ -1,24 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
 import { colors } from '../utils/colors'
-import { Flex } from './box'
+import { theme } from '../utils/theme'
+import { Box, Flex } from './box'
 import { Icon, IconType } from './icons'
 
 export const Footer: React.FC = () => (
   <Flex
-    justifyContent="space-between"
-    alignItems="center"
-    bg={colors.black[100]}
-    height={80}
-    px={20}
     mt={[60, 120]}
+    bg={colors.black[100]}
+    justifyContent="center"
+    height={80}
   >
-    <small>© kenshir0f 2021</small>
-    <Flex>
-      <SNSIcon type="twitter" />
-      <SNSIcon type="github" />
-      <SNSIcon type="note" />
-      <SNSIcon type="speakerdeck" />
+    <Flex
+      justifyContent="space-between"
+      alignItems="center"
+      px={20}
+      maxWidth={720}
+      width="100%"
+    >
+      <Copyright>© kenshir0f 2021</Copyright>
+      <Flex>
+        <SNSIcon type="twitter" />
+        <SNSIcon type="github" />
+        <SNSIcon type="note" />
+        <SNSIcon type="speakerdeck" />
+      </Flex>
     </Flex>
   </Flex>
 )
@@ -41,6 +48,12 @@ const SNSIcon: React.FC<Props> = ({ type }) => {
     </SNSLink>
   )
 }
+
+const Copyright = styled.small`
+  color: ${colors.black[900]};
+  font-size: ${theme.fontSizes.sm};
+  letter-spacing: 0.02rem;
+`
 
 const SNSLink = styled.a`
   margin-left: 24px;
