@@ -13,7 +13,7 @@ type Props = HeadingProps & COMMON_PROPS & HTMLAttributes<HTMLParagraphElement>
 export const Heading: React.FC<Props> = ({ icon, children, ...props }) => {
   return (
     <Flex alignItems="center" mt={"64px"} {...props}>
-      <Icon type={icon} color={colors.blue} />
+      <Icon type={icon} color={colors.blue} mt="-2px"/>
       <H2 ml={2}>{children}</H2>
     </Flex>
   )

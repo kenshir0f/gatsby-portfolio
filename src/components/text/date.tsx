@@ -4,12 +4,16 @@ import { colors } from '../../utils/colors'
 import { theme } from '../../utils/theme'
 import { COMMON, COMMON_PROPS } from '../../utils/constants'
 
-export const Date: React.FC = ({ children }) => {
+interface Props {
+  time: string
+}
+
+export const Date: React.FC<Props> = ({ time }) => {
   const { sm, md } = theme.fontSizes
 
   return (
     <DateBase fontSize={[sm, md]} mb={["20px"]}>
-      {children}
+      {time}
     </DateBase>
   )
 }
