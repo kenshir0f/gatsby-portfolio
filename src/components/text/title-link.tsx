@@ -6,12 +6,13 @@ import { COMMON, COMMON_PROPS } from '../../utils/constants'
 import { Icon } from '../icons'
 
 interface TitleLinkProps {
+  text: string
   href: string
   youtube?: boolean
 }
 
 export const TitleLink: React.FC<TitleLinkProps> = ({
-  children,
+  text,
   href,
   youtube,
 }) => {
@@ -19,7 +20,7 @@ export const TitleLink: React.FC<TitleLinkProps> = ({
 
   return (
     <TitleLinkBase href={href} fontSize={[md, lg]} mb={[1]}>
-      {children}
+      {text}
       {youtube && (
         <a href="https://www.youtube.com/watch?v=X9JjTfeEJ5A" target="_blank">
           <Icon

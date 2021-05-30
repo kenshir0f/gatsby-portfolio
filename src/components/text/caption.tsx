@@ -4,14 +4,18 @@ import { colors } from '../../utils/colors'
 import { theme } from '../../utils/theme'
 import { COMMON, COMMON_PROPS } from '../../utils/constants'
 
-type Props = COMMON_PROPS & HTMLAttributes<HTMLSpanElement>
+interface CaptionProps {
+  text: string
+}
 
-export const Caption: React.FC<Props> = ({ children, ...props }) => {
+type Props = CaptionProps & COMMON_PROPS & HTMLAttributes<HTMLSpanElement>
+
+export const Caption: React.FC<Props> = ({ text, ...props }) => {
   const { sm } = theme.fontSizes
 
   return (
     <CaptionBase fontSize={sm} {...props}>
-      {children}
+      {text}
     </CaptionBase>
   )
 }
