@@ -7,7 +7,7 @@ import { Profile } from '../components/profile'
 import { Heading, TitleLink, Date, Caption, BodyText } from '../components/text'
 import { Tag } from '../components/tag'
 import { ReadMoreButton } from '../components/button'
-import { Skills, Rewards, Blogs } from '../components/sections'
+import { Skills, Rewards, Blogs, About } from '../components/sections'
 
 const components = {
   Box,
@@ -23,6 +23,7 @@ const components = {
   Skills,
   Rewards,
   Blogs,
+  About,
 }
 
 export const wrapRootElement: React.FC<any> = ({ element }) => {
