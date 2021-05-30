@@ -23,5 +23,6 @@ const H2 = styled.h2<COMMON_PROPS>`
   color: ${colors.blue};
   margin: 0;
   line-height: 125%;
+  letter-spacing: 0.02rem;
   ${COMMON}
 `
