@@ -1,7 +1,7 @@
 import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider } from 'styled-components'
-import theme from './theme'
+import { theme } from './theme'
 import { Box, Flex } from '../components/box'
 import { Profile } from '../components/profile'
 import { Heading } from '../components/heading'

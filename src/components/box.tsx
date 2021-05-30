@@ -12,7 +12,7 @@ import {
   border,
   BorderProps,
 } from 'styled-system'
-import theme from '../utils/theme'
+import { theme } from '../utils/theme'
 
 type Props = SpaceProps & ColorProps & LayoutProps & LayoutProps & BorderProps
 
