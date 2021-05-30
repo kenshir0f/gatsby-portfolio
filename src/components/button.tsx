@@ -34,6 +34,6 @@ const ButtonBase = styled.a`
   cursor: pointer;
   text-decoration: none;
   :hover {
-    background-color: #F5FAFD;
+    background-color: ${colors.buttonHover};
   }
 `

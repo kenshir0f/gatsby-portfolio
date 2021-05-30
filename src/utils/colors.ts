@@ -9,4 +9,5 @@ export const colors = {
   },
   blue: '#006AA6',
   white: '#FFFFFF',
+  buttonHover: '#F5FAFD',
 }

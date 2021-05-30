@@ -48,7 +48,11 @@ const CompanyHistoryBase = styled.h3<COMMON_PROPS>`
 `
 
 const Department: React.FC<Props> = ({ text }) => {
-  return <DepartmentBase color={[colors.black[700], colors.black[500]]}>{text}</DepartmentBase>
+  return (
+    <DepartmentBase color={[colors.black[700], colors.black[500]]}>
+      {text}
+    </DepartmentBase>
+  )
 }
 
 // NOTE: styled-system で color が responsive の配列を受け取る型がないため any を代用

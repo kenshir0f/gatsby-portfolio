@@ -12,7 +12,7 @@ export const Date: React.FC<Props> = ({ time }) => {
   const { sm, md } = theme.fontSizes
 
   return (
-    <DateBase fontSize={[sm, md]} mb={["20px"]}>
+    <DateBase fontSize={[sm, md]} mb={20}>
       {time}
     </DateBase>
   )

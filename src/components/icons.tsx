@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, SVGAttributes } from 'react'
+import React, { SVGAttributes } from 'react'
 import styled from 'styled-components'
 import { COMMON, COMMON_PROPS } from '../utils/constants'
 

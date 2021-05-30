@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { colors } from '../utils/colors'
 import { theme } from '../utils/theme'
-import { Box, Flex } from './box'
+import { Flex } from './box'
 import { Icon, IconType } from './icons'
 
 export const Footer: React.FC = () => (

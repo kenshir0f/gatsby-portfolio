@@ -11,10 +11,7 @@ export const Works: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Box {...props}>
       <Heading icon="book" mb={3} text="Works" />
-      <Grid
-        gridGap="24px"
-        gridTemplateColumns={["1fr", "1fr 1fr"]}
-      >
+      <Grid gridGap="24px" gridTemplateColumns={['1fr', '1fr 1fr']}>
         <Work
           image={<StopCovidImage />}
           title="東京都 新型コロナウイルス感染症対策サイト"

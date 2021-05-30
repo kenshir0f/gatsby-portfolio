@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 import { Icon, IconType } from '../icons'
 import { colors } from '../../utils/colors'
 import { Flex } from '../box'

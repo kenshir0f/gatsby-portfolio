@@ -6,12 +6,12 @@ import { theme } from '../../utils/theme'
 import { Flex } from '../box'
 import { Icon } from '../icons'
 
-export const Enjoy: React.FC<BaseProps> = ({...props}) => {
+export const Enjoy: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Flex justifyContent="center" {...props}>
-      <Icon type="drink" color={colors.blue}/>
+      <Icon type="drink" color={colors.blue} />
       <Text>Enjoy your day</Text>
-      <Icon type="game" color={colors.blue}/>
+      <Icon type="game" color={colors.blue} />
     </Flex>
   )
 }
