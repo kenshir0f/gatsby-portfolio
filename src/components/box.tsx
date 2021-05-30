@@ -1,32 +1,19 @@
 import styled from 'styled-components'
-import {
-  space,
-  SpaceProps,
-  color,
-  layout,
-  typography,
-  flexbox,
-  ColorProps,
-  LayoutProps,
-  FlexboxProps,
-  border,
-  BorderProps,
-} from 'styled-system'
+import { COMMON, COMMON_PROPS } from '../utils/constants'
 import { theme } from '../utils/theme'
 
-type Props = SpaceProps & ColorProps & LayoutProps & LayoutProps & BorderProps
-
-export const Box = styled.div<Props>`
-  ${space}
-  ${color}
-  ${layout}
-  ${typography}
-  ${border}
+export const Box = styled.div<COMMON_PROPS>`
+  ${COMMON}
 `
 
 Box.defaultProps = { theme }
 
-export const Flex = styled(Box)<Props & FlexboxProps>`
+export const Flex = styled(Box)<COMMON_PROPS>`
   display: flex;
-  ${flexbox}
+  ${COMMON}
+`
+
+export const Grid = styled(Box)<COMMON_PROPS>`
+  display: grid;
+  ${COMMON}
 `
