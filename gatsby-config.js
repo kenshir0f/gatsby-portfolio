@@ -7,11 +7,12 @@ module.exports = {
     description: 'Portfolio of kenshir0f',
   },
   plugins: [
+    // 静的画像の読み込み
     'gatsby-plugin-image',
+    // `gatsby-plugin-image`に必要なプラグイン
     'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    // ページ遷移ごとの再読み込みを防ぐ
     'gatsby-plugin-catch-links',
-    'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-preload-fonts',
