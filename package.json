@@ -4,6 +4,7 @@
   "description": "Portfolio of kenshir0f",
   "main": "index.js",
   "author": "Kenshiro Fujii",
+  "homepage": "https://kenshir0f.com",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
