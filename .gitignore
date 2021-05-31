@@ -105,4 +105,7 @@ public
 .cache
 package-lock.json
 
+# Firebase
+.firebase
+
 # End of https://www.gitignore.io/api/osx,node

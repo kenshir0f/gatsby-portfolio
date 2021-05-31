@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { colors } from '../../utils/colors'
-import { Flex } from '../box'
+import { Box, Flex } from '../box'
 import { COMMON, COMMON_PROPS } from '../../utils/constants'
 import { theme } from '../../utils/theme'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -27,15 +27,17 @@ export const Profile: React.FC = () => {
 
 const Image: React.FC = () => {
   return (
-    <StaticImage
-      src={'../../images/profile.jpg'}
-      alt="プロフィール画像"
-      width={160}
-      height={160}
-      style={{ borderRadius: '50%' }}
-      placeholder="blurred"
-      loading="eager"
-    />
+    // HACK: Safari で角丸が聞かない親要素でトリミングしている
+    <Box borderRadius="50%">
+      <StaticImage
+        src={'../../images/profile.jpg'}
+        alt="プロフィール画像"
+        width={160}
+        height={160}
+        placeholder="blurred"
+        loading="eager"
+      />
+    </Box>
   )
 }
 

@@ -46,7 +46,10 @@ interface Props {
 const Work: React.FC<Props> = ({ image, title, description }) => {
   return (
     <Box>
-      {image}
+      {/* HACK: Safari で角丸が聞かない親要素でトリミングしている */}
+      <Box borderRadius="4px" overflow="hidden">
+        {image}
+      </Box>
       <Title>{title}</Title>
       <Desc>{description}</Desc>
     </Box>
@@ -74,10 +77,11 @@ const Desc = styled.span`
 // ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-image/#restrictions-on-using-staticimage
 const StopCovidImage: React.FC = () => {
   return (
+    // HACK: Safari で角丸が聞かない親要素でトリミングしている
     <StaticImage
       src="../../images/works/stop-covid.jpg"
       alt="東京都 新型コロナウイルス感染症対策サイト"
-      style={{ borderRadius: 4, objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: 'cover', width: '100%' }}
       placeholder="blurred"
     />
   )
@@ -88,7 +92,7 @@ const StellaImage: React.FC = () => {
     <StaticImage
       src="../../images/works/stella.jpg"
       alt="Stella"
-      style={{ borderRadius: 4, objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: 'cover', width: '100%' }}
       placeholder="blurred"
     />
   )
@@ -99,7 +103,7 @@ const KomercoImage: React.FC = () => {
     <StaticImage
       src="../../images/works/komerco.jpg"
       alt="Komerco"
-      style={{ borderRadius: 4, objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: 'cover', width: '100%' }}
       placeholder="blurred"
     />
   )
@@ -110,7 +114,7 @@ const MagoChImage: React.FC = () => {
     <StaticImage
       src="../../images/works/mago-ch.jpg"
       alt="まごチャンネル"
-      style={{ borderRadius: 4, objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: 'cover', width: '100%' }}
       placeholder="blurred"
     />
   )
