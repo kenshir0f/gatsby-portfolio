@@ -21,19 +21,19 @@ export const Works: React.FC<BaseProps> = ({ ...props }) => {
         <Work
           image={<StellaImage />}
           title="Stella"
-          description="Frontend Dev / UI Design"
+          description="個人開発 / 日報サービス"
           href="https://stella-app.jp"
         />
         <Work
           image={<KomercoImage />}
           title="Komerco"
-          description="Frontend Dev / UI Design"
+          description="UI Design / Service Design / Frontend Dev"
           href="https://komer.co"
         />
         <Work
           image={<MagoChImage />}
           title="まごチャンネル"
-          description="Frontend Dev / UI Design"
+          description="Graphic Design / UI Design"
           href="https://mago-ch.com"
         />
       </Grid>
