@@ -13,7 +13,6 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-remove-trailing-slashes',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-preload-fonts',
     {
