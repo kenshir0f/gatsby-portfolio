@@ -16,21 +16,25 @@ export const Works: React.FC<BaseProps> = ({ ...props }) => {
           image={<StopCovidImage />}
           title="東京都 新型コロナウイルス感染症対策サイト"
           description="Frontend Dev / UI Design"
+          href="https://stopcovid19.metro.tokyo.lg.jp/"
         />
         <Work
           image={<StellaImage />}
           title="Stella"
           description="Frontend Dev / UI Design"
+          href="https://stella-app.jp"
         />
         <Work
           image={<KomercoImage />}
           title="Komerco"
           description="Frontend Dev / UI Design"
+          href="https://komer.co"
         />
         <Work
           image={<MagoChImage />}
           title="まごチャンネル"
           description="Frontend Dev / UI Design"
+          href="https://mago-ch.com"
         />
       </Grid>
     </Box>
@@ -41,20 +45,24 @@ interface Props {
   image: JSX.Element
   title: string
   description: string
+  href: string
 }
 
-const Work: React.FC<Props> = ({ image, title, description }) => {
+const Work: React.FC<Props> = ({ image, title, description, href }) => {
   return (
     <Box>
-      {/* HACK: Safari で角丸が聞かない親要素でトリミングしている */}
-      <Box borderRadius="4px" overflow="hidden">
+      <Container href={href} target="_blank" rel="noreferrer noopener">
         {image}
-      </Box>
-      <Title>{title}</Title>
-      <Desc>{description}</Desc>
+        <Title>{title}</Title>
+        <Desc>{description}</Desc>
+      </Container>
     </Box>
   )
 }
+
+const Container = styled.a`
+  text-decoration: none;
+`
 
 const Title = styled.p`
   color: ${colors.black[900]};
@@ -77,11 +85,13 @@ const Desc = styled.span`
 // ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-image/#restrictions-on-using-staticimage
 const StopCovidImage: React.FC = () => {
   return (
-    // HACK: Safari で角丸が聞かない親要素でトリミングしている
     <StaticImage
-      src="../../images/works/stop-covid.jpg"
+      src="../../images/works/stop-covid.png"
       alt="東京都 新型コロナウイルス感染症対策サイト"
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{
+        objectFit: 'cover',
+        width: '100%',
+      }}
       placeholder="blurred"
     />
   )
@@ -90,9 +100,12 @@ const StopCovidImage: React.FC = () => {
 const StellaImage: React.FC = () => {
   return (
     <StaticImage
-      src="../../images/works/stella.jpg"
+      src="../../images/works/stella.png"
       alt="Stella"
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{
+        objectFit: 'cover',
+        width: '100%',
+      }}
       placeholder="blurred"
     />
   )
@@ -101,9 +114,12 @@ const StellaImage: React.FC = () => {
 const KomercoImage: React.FC = () => {
   return (
     <StaticImage
-      src="../../images/works/komerco.jpg"
+      src="../../images/works/komerco.png"
       alt="Komerco"
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{
+        objectFit: 'cover',
+        width: '100%',
+      }}
       placeholder="blurred"
     />
   )
@@ -112,9 +128,12 @@ const KomercoImage: React.FC = () => {
 const MagoChImage: React.FC = () => {
   return (
     <StaticImage
-      src="../../images/works/mago-ch.jpg"
+      src="../../images/works/mago-ch.png"
       alt="まごチャンネル"
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{
+        objectFit: 'cover',
+        width: '100%',
+      }}
       placeholder="blurred"
     />
   )

@@ -28,7 +28,7 @@ export const Profile: React.FC = () => {
 const Image: React.FC = () => {
   return (
     // HACK: Safari で角丸が聞かない親要素でトリミングしている
-    <Box borderRadius="50%">
+    <Box borderRadius="50%" overflow="hidden" zIndex={1}>
       <StaticImage
         src={'../../images/profile.jpg'}
         alt="プロフィール画像"
