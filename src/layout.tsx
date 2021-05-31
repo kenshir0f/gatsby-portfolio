@@ -11,7 +11,18 @@ const Layout: React.FC = ({ children }) => {
         htmlAttributes={{ lang: 'ja' }}
         title="kenshir0f portfolio"
         meta={[
-          { name: 'kenshir0f', content: 'This page is kenshir0f portfolio ' },
+          { property: 'og:title', content: 'kenshir0f portfolio' },
+          { property: 'og:type', content: 'website' },
+          { property: 'og:url', content: 'https://kenshir0f.com' },
+          {
+            property: 'og:image',
+            content: 'https://kenshir0f.com/static/images/profile.jpg',
+          },
+          { property: 'og:site_name', content: 'kenshir0f portfolio' },
+          { property: 'og:description', content: 'kenshir0f portfolio site' },
+          { property: 'twitter:card', content: 'summary' },
+          { property: 'twitter:site', content: '@kenshir0f' },
+          { property: 'twitter:player', content: '@kenshir0f' },
         ]}
       />
       <GlobalStyle />
