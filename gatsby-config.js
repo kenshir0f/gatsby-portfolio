@@ -13,6 +13,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     // ページ遷移ごとの再読み込みを防ぐ
     'gatsby-plugin-catch-links',
+    // metaタグの追加
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-preload-fonts',
@@ -43,5 +44,11 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/favicon.png'
+      }
+    }
   ],
 }
