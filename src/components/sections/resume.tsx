@@ -17,14 +17,14 @@ export const Resume: React.FC<BaseProps> = ({ ...props }) => {
       <Department text="Tech Dept | 2020" />
       <Description text="cookpad.com のリファクタリング、デザインライブラリの更新及びデザイン負債の解消" />
       <Department text="Komerco Dept | 2017 - 2020" />
-      <Description text="ロゴデザイン、サービス設計、UIデザイン、Webアプリケーションの開発(Next.js x
-        Firebase)" />
+      <Description
+        text="ロゴデザイン、サービス設計、UIデザイン、Webアプリケーションの開発(Next.js x
+        Firebase)"
+      />
 
       <CompanyHistory text="Chikaku, Inc. | 2015 - 2018" />
       <Department text="Designer as Intern" />
-      <Description
-        text="端末の取扱説明書やチラシ、パンフレットのデザイン、アプリのUIデザイン"
-      />
+      <Description text="端末の取扱説明書やチラシ、パンフレットのデザイン、アプリのUIデザイン" />
     </Box>
   )
 }
