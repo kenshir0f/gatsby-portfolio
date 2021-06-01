@@ -11,6 +11,10 @@ const Layout: React.FC = ({ children }) => {
         htmlAttributes={{ lang: 'ja' }}
         title="kenshir0f portfolio"
         meta={[
+          {
+            name: 'description',
+            content: 'This is portfolio site of kenshir0f',
+          },
           { property: 'og:title', content: 'kenshir0f portfolio' },
           { property: 'og:type', content: 'website' },
           { property: 'og:url', content: 'https://kenshir0f.com' },
