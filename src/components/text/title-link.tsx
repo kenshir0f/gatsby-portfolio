@@ -35,6 +35,7 @@ export const TitleLink: React.FC<TitleLinkProps> = ({
           href="https://www.youtube.com/watch?v=X9JjTfeEJ5A"
           target="_blank"
           rel="noreferrer noopener"
+          aria-label="youtubeで見る"
         >
           <Icon
             type="youtube"
