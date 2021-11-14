@@ -9,6 +9,11 @@ export const Blogs: React.FC<BaseProps> = ({ ...props }) => {
     <Box {...props}>
       <Heading icon="edit" mb={[3, 4]} text="Blogs" />
       <TitleLink
+        text="クックパッドのデザイン品質を支える Apron Design System の構築"
+        href="https://note.com/fjkn/n/nf73742ec925a"
+      />
+      <Date time="2021.07.06" />
+      <TitleLink
         text="デザイン基盤を整えるため、サービス開発から少し離れた話"
         href="https://note.com/fjkn/n/nc8f5498e5e69"
       />
