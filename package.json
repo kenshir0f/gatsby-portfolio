@@ -28,18 +28,18 @@
     "gatsby-plugin-styled-components": "^4.6.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^3.6.0",
+    "graphql": "^14.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2",
-    "styled-system": "^5.0.18",
-    "graphql": "^14.0.0"
+    "styled-components": "^5.3.3",
+    "styled-system": "^5.0.18"
   },
   "devDependencies": {
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
-    "@types/styled-components": "^5.1.4",
+    "@types/styled-components": "^5.1.15",
     "@types/styled-system": "^5.1.10",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
