@@ -10,9 +10,12 @@ export const Resume: React.FC<BaseProps> = ({ ...props }) => {
   return (
     <Box {...props}>
       <Heading icon="paper" mb={[4, 5]} text="Resume" />
-      <CompanyHistory text="Cookpad Inc. | 2017 - Present" />
 
-      <Department text="Design Strategy Dept | 2020 - Present" />
+      <CompanyHistory text="Freelance | 2022 - Present" />
+      <Description text="UIデザインやフロントエンド開発、デザインシステムの構築などでお仕事いただいています。" />
+
+      <CompanyHistory text="Cookpad Inc. | 2017 - 2021" />
+      <Department text="Design Strategy Dept | 2020 - 2021" />
       <Description text="cookpad.com のデザインシステムの構築及び反映、デザイン基盤Gグループ長" />
       <Department text="Tech Dept | 2020" />
       <Description text="cookpad.com のリファクタリング、デザインライブラリの更新及びデザイン負債の解消" />

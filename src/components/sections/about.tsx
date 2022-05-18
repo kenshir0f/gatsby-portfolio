@@ -17,8 +17,6 @@ export const About: React.FC<BaseProps> = ({ ...props }) => {
         <br />
         日常の生活がちょっと楽しくなるサービスを作るのが好き。
         <br />
-        スプラトゥーン ウデマエ X / Apex ダイヤ帯
-        <br />
         プロフィールの猫はブリティッシュショートヘアのごまおさんです。(2歳)
       </BodyText>
     </Box>

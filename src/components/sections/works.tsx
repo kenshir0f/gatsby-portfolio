@@ -13,6 +13,12 @@ export const Works: React.FC<BaseProps> = ({ ...props }) => {
       <Heading icon="book" mb={3} text="Works" />
       <Grid gridGap="24px" gridTemplateColumns={['1fr', '1fr 1fr']}>
         <Work
+          image={<CookpadImage />}
+          title="クックパッド"
+          description="Frontend Dev"
+          href="https://note.com/dex1t/n/nd3a758a44c8d"
+        />
+        <Work
           image={<StopCovidImage />}
           title="東京都 新型コロナウイルス感染症対策サイト"
           description="Frontend Dev / UI Design"
@@ -83,6 +89,20 @@ const Desc = styled.span`
 
 // Fixme: gatsby-plugin-image では props 用いて静的画像を操作することができないため、冗長になるが4つ分の画像を用意
 // ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-image/#restrictions-on-using-staticimage
+const CookpadImage: React.FC = () => {
+  return (
+    <StaticImage
+      src="../../images/works/cookpad.png"
+      alt="クックパッド"
+      style={{
+        objectFit: 'cover',
+        width: '100%',
+      }}
+      placeholder="blurred"
+    />
+  )
+}
+
 const StopCovidImage: React.FC = () => {
   return (
     <StaticImage
