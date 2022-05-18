@@ -12,8 +12,8 @@ export const Rewards: React.FC<BaseProps> = ({ ...props }) => {
         href="https://www.g-mark.org/award/describe/51112"
       />
       <Caption
-        text="立ち上げからデザインと開発に携わった「東京都
-        新型コロナウイルス感染症対策サイト」がグッドデザイン賞ベスト100を受賞しました。"
+        text="デザインと開発に携わった「東京都
+        新型コロナウイルス感染症対策サイト」がグッドデザイン賞金賞を受賞しました。"
         mb={4}
       />
       <TitleLink
